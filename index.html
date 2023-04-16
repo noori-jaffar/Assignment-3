@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Movies App</h1>
+      <div class="search-form-container">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search for movies..."
+        />
+        <button id="searchBtn">Search</button>
+      </div>
+    </header>
+    <main>
+      <section id="moviesResults">
+        <h2 class="search-results-heading">Search Results</h2>
+<div class="select1">
+        <br>
+        <div class="dropdown"> <p>GENRE</p>
+          <input type="text" placeholder="ALL" id="search-box">
+          <button class="dropbtn">Search</button>
+          <div class="dropdown-content" id="search-results"></div>
+        </div>
+
+        <br>
+        <div class="dropdown"> <p>YEAR</p>
+          <input type="text" placeholder="ALL" id="search-box">
+          <button class="dropbtn">Search</button>
+          <div class="dropdown-content" id="search-results"></div>
+        </div>
+
+        <br>
+        <div class="dropdown"> <p>LANGUAGE</p>
+          <input type="text" placeholder="ALL" id="search-box">
+          <button class="dropbtn">Search</button>
+          <div class="dropdown-content" id="search-results"></div>
+        </div>
+      </div>
+
+      <div class="select2">
+        <br>
+        <div class="rating"> <p>RATING</p>
+          <input type="text" placeholder="ALL" id="search-box">
+          <button class="dropbtn">Search</button>
+          <div class="dropdown-content" id="search-results"></div>
+        </div>
+      </div>
+
+        <div class="list-container">
+          <ul id="movies-list"></ul>
+        </div>
+        
+      </section>
+      <section id="moviesDetails">
+        <h2>Movies Details</h2>
+        <div id="moviesDetailsContainer"></div>
+
+        
+      </section>
+    </main>
+
+    
+  </body>
+</html>
